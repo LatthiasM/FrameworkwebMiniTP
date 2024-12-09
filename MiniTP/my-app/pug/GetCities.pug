@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Liste des villes
+    style 
+      include ../styles/stylesCities.css
+      include ../styles/navbar.css
+  body
+    include navbar.pug
+    h1 Liste des villes
+    table
+      thead
+        tr
+          th Identifiant
+          th Nom de la ville
+      tbody
+        each city in cities
+          tr
+            td= city.id
+            td= city.name

@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Tableau Utilisateurs
+    style 
+      include ../styles/styles.css
+      include ../styles/navbar.css
+  body
+    include navbar.pug
+    h1 Liste des utilisateurs
+    table
+      thead
+        tr
+          th Identifiant
+          th Ville
+      tbody
+        each user in users
+          tr
+            td= user.username
+            td= user.city
+
+  p Mini TP : appel du script de lecture via une API web

@@ -1,0 +1,37 @@
+html
+  head
+    title Carte des villes
+    style
+        include ../styles/styleMap.css
+        include ../styles/leaflet.css
+        include ../styles/navbar.css
+  body
+    include navbar.pug
+    h1 Carte des villes
+    #map
+    button#reset-map Recentrer la carte
+
+    script 
+        include ../leaflet.js
+    script.
+      // Initialisation de la carte
+      const map = L.map('map').setView([46.603354, 1.888334], 5); // Centré sur la France
+
+      // Ajouter les tuiles OpenStreetMap
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(map);
+
+      // Ajouter les marqueurs pour chaque ville
+      const cities = !{JSON.stringify(cities)};
+      cities.forEach(city => {
+        L.marker([city.latitude, city.longitude])
+          .addTo(map)
+          .bindPopup(`<b>${city.name}</b><br>ID: ${city.id}`);
+      });
+
+      // Ajouter une fonctionnalité pour recentrer la carte
+      const franceCoordinates = [46.603354, 1.888334]; // France
+      document.getElementById('reset-map').addEventListener('click', () => {
+        map.setView(franceCoordinates, 5);
+      });

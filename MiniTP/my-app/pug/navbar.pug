@@ -1,0 +1,14 @@
+nav.navbar
+  div.nav-container
+    a.logo(href="/") 🌍 TP API cities.json
+    ul.nav-list
+      li.nav-item
+        a(href="/" class=(currentPage === '/' ? 'active' : '')) Accueil
+      li.nav-item
+        a(href="/visuCities" class=(currentPage === '/visuCities' ? 'active' : '')) Visualiser les villes
+      li.nav-item
+        a(href="/map" class=(currentPage === '/map' ? 'active' : '')) Carte des villes
+    div.nav-toggle
+      span.bar
+      span.bar
+      span.bar

@@ -1,0 +1,22 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "firstapp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "my-app": "file:",
+    "nodemon": "^3.1.7",
+    "passport": "^0.7.0",
+    "pug": "^3.0.3",
+    "uuid": "^11.0.3"
+  }
+}

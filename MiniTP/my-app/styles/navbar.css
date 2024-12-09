@@ -1,0 +1,107 @@
+/* Style de la navbar */
+.navbar {
+    background: linear-gradient(90deg, #333, #444); /* Dégradé pour la barre de navigation */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre élégante */
+    margin: 0 10px; /* Espacement sur les côtés */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Bordure subtile */
+}
+
+/* Conteneur central */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+    text-decoration: none;
+    margin-right: auto;
+}
+
+/* Liste des liens */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+/* Liens de la navbar */
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent; /* Préparer le soulignement */
+    transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.2s ease;
+    padding: 5px 10px; /* Espacement autour du texte */
+    border-radius: 5px; /* Coins arrondis pour les liens */
+}
+
+.nav-item a:hover {
+    color: #4CAF50;
+    transform: scale(1.05); /* Légère mise en avant */
+    border-bottom: 2px solid #4CAF50; /* Soulignement au survol */
+    background-color: rgba(255, 255, 255, 0.1); /* Arrière-plan subtil au survol */
+}
+
+/* Lien actif */
+.nav-item a.active {
+    font-weight: bold;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50; /* Soulignement permanent */
+    background-color: rgba(255, 255, 255, 0.2); /* Arrière-plan pour l'élément actif */
+}
+
+/* Mobile toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.nav-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(90deg, #333, #444); /* Dégradé similaire pour le menu mobile */
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}

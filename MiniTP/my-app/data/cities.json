@@ -1,0 +1,34 @@
+{
+  "cities": [
+    {
+      "id": "04f2f34d-d899-321c-a0d6",
+      "name": "Toulouse",
+      "latitude": 43.604652,
+      "longitude": 1.444209
+    },
+    {
+      "id": "3f6bb256-0838-497e-923a-6ecafee0fd70",
+      "name": "Albi",
+      "latitude": 43.9298,
+      "longitude": 2.148
+    },
+    {
+      "id": "77c22b57-2dd8-48e5-ac1d-a2cd536af90b",
+      "name": "Lyon",
+      "latitude": 45.74846,
+      "longitude": 4.84671
+    },
+    {
+      "id": "3fea1cb1-2602-414e-8841-0e8e3d7eb3f5",
+      "name": "Marseille",
+      "latitude": 43.296482,
+      "longitude": 5.36978
+    },
+    {
+      "id": "bfb8c26d-4954-49e9-adb0-7deaa195fe42",
+      "name": "Paris",
+      "latitude": 48.856613,
+      "longitude": 2.352222
+    }
+  ]
+}

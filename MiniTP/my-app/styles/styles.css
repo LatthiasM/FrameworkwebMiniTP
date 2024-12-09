@@ -1,0 +1,45 @@
+/* Styles pour le tableau */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: separate;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-spacing: 2px 2px; /* Ajoute des interlignes */
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+  th {
+    background-color: #4fbd54; /* Bleu pour l'en-tête */
+    color: white;
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #FFFFFF; /* Fond blanc pour les cellules */
+    border: 1px solid #ddd; /* Ajoute des bordures */
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #dcf1dd; /* Couleur claire pour les lignes paires */
+  }
+  
+  p{
+    text-align: center;
+  }

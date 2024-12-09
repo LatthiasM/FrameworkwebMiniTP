@@ -1,0 +1,44 @@
+/* Style de la page entière */
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Style du titre */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* Conteneur pour centrer et styliser la carte */
+#map {
+    height: 500px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fefefe00;
+}
+
+/* Bouton pour recentrer la carte */
+#reset-map {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-map:hover {
+    background-color: #45a07f;
+}
